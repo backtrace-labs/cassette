@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		00F51DF502CEE37E08D774E7 /* libPods-Cassette-CassetteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BC2AFE01B19B98289F90B4 /* libPods-Cassette-CassetteTests.a */; };
+		1EDF2FBFD7AE8BB8575D1641 /* libPods-Cassette.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FAF8F326A3573600EF78A7 /* libPods-Cassette.a */; };
 		3C4A83562311B29400D06FAE /* Cassette.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A83522311B29400D06FAE /* Cassette.release.xcconfig */; };
 		3C4A83572311B29400D06FAE /* Cassette.common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A83532311B29400D06FAE /* Cassette.common.xcconfig */; };
 		3C4A83582311B29400D06FAE /* Cassette.common.warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A83542311B29400D06FAE /* Cassette.common.warnings.xcconfig */; };
@@ -137,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EDF2FBFD7AE8BB8575D1641 /* libPods-Cassette.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -768,12 +770,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Cassette/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.Cassette;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -798,12 +801,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Cassette/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.Cassette;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
